@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRecruiters Task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <main>
+        <!-- Snippet Section -->
+        <section class="snippet">
+            <h2 class="snippet__heading">Snippet Heading</h2>
+            <p class="snippet__description">
+                Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad <a href="./minim" class="snippet__link--description">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.
+            </p>
+            <div class="snippet__links">
+                <h3 class="snippet__links-title">Links</h3>
+                <div class="snippet__links-container">
+                    <a href="#" class="snippet__link snippet__link--primary">Link One <span class="star-icon">★</span></a>
+                    <a href="#" class="snippet__link snippet__link--secondary">Link Two</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" aria-label="Image and video gallery">
+            <div class="gallery__grid">
+                <div class="gallery__left">
+                    <div class="gallery__row">
+                        <div class="gallery__item gallery__item--medium">
+                            <img src="assets/robot-img1.webp" alt="Robot" class="gallery__image">
+                        </div>
+                        <div class="gallery__item gallery__item--medium">
+                            <img src="assets/team-img2.webp" alt="Team meeting" class="gallery__image">
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--wide">
+                        <img src="assets/city-img4.webp" alt="City view" class="gallery__image">
+                    </div>
+                </div>
+                <div class="gallery__right">
+                    <div class="gallery__item">
+                        <img src="assets/smart-robot-img3.webp" alt="Smart robot" class="gallery__image">
+                        <button class="gallery__play-button" aria-label="Display video about Smart Robot" type="button">
+                            <img src="assets/state-default.webp" alt="play icon" class="play-icon play-icon--default" aria-hidden="true">
+                            <img src="assets/state-hover.webp" alt="alternative play icon" class="play-icon play-icon--hover" aria-hidden="true">
+                        </button>
+                    </div>
+                    <div class="gallery__item gallery__item--medium">
+                        <img src="assets/woman-img5.webp" alt="Woman in office" class="gallery__image">
+                    </div>
+                </div>
+            </div>
+            <p class="gallery__copyright"><strong>Media copyright</strong> - Lorem ipsum dolor sit amet.</p>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal__content" role="document">
+            <button class="modal__close" aria-label="Close modal" type="button">
+                <img src="assets/close.webp" alt="" class="modal__close-icon" aria-hidden="true">
+            </button>
+            <h2 class="modal__heading" id="modalTitle">Modal Heading</h2>
+            <p class="modal__description">
+                Lorem <em>ipsum</em> dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad <a href="./minim">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.
+            </p>
+            <div class="modal__video-container">
+                <div class="modal__video" role="region" aria-label="Youtube video player">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
