@@ -12,3 +12,6 @@
 3. Open the `index.html` file
 
    // Alternatively, use a local live server to run the project
+
+
+PROJECT IS HOSTED HERE: https://sr.mochocki.com.pl/
