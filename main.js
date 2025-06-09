@@ -78,9 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             events: {
                 'onReady': (event) => {
                     event.target.playVideo();
-                    // Sprawdź czy urządzenie jest mobilne
                     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                        // Dostosuj rozmiar playera dla urządzeń mobilnych
                         const videoContainer = document.querySelector('.modal__video-container');
                         const containerWidth = videoContainer.offsetWidth;
                         event.target.setSize(containerWidth, containerWidth * 0.5625);
